@@ -3,3 +3,48 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --primary-color: #182C61;
+    --secondary-color: #ecf0f1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.header {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: 800;
+}
