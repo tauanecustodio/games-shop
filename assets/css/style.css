@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style-type: none;
 }
 
 :root {
@@ -11,16 +12,22 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'roboto', sans-serif;
 }
 
-.container {
-    max-width: 1350px;
-    margin: 0 auto;
-    padding: 1rem 2rem;
+header, h1, h2, h3, form button {
+    font-family: 'bungee', cursive;
+    font-weight: normal;
 }
 
 /* -----------------------components----------------------- */
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
 
 .title {
     font-size: 1.7rem;
@@ -61,8 +68,11 @@ body {
     font-weight: 800;
 }
 
+.logo a {
+    color: var(--secondary-color);
+}
+
 .nav-bar ul {
-    list-style-type: none;
     display: flex;
     gap: 1rem;
 }
@@ -70,7 +80,7 @@ body {
 .nav-bar ul li a {
     text-decoration: none;
     color: var(--secondary-color);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 800;
 }
 
@@ -89,7 +99,11 @@ body {
     gap: 1rem;
 }
 
-.console-group img {
+.brands-list li {
+    display: inline;
+}
+
+.brands-list li img {
     height: 25px;
     margin-right: 0.5rem;
 }
@@ -121,17 +135,26 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
 input::placeholder, textarea::placeholder {
     font-size: 0.8rem;
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+input:focus, textarea:focus {
+    outline-color: var(--primary-color);
+}
+
 .contact-form button {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-size: 0.8rem;
-    font-weight: 800;
+    letter-spacing: 1px;
     text-transform: uppercase;
     border: none;
     padding: 0.5rem;
@@ -158,8 +181,14 @@ input::placeholder, textarea::placeholder {
 .social-medias li a img {
     height: 25px;
 }
+ 
+address a {
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: var(--primary-color);
+}
 
-/* -----------------------main-contact----------------------- */
+/* -----------------------footer----------------------- */
 
 .footer {
     background-color: var(--primary-color);

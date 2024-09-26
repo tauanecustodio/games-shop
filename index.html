@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games Shop - A sua loja de games</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,300;0,400;1,900&display=swap" rel="stylesheet">
+    <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Games Shop - A sua loja de games</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <h1 class="logo">Games Shop</h1>
+            <h1 class="logo"><a href="#">Games Shop</a></h1>
             <nav class="nav-bar">
                 <ul>
-                    <li><a href="#about">Sobre a loja</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#main-about">Sobre a loja</a></li>
+                    <li><a href="#main-contact">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <div class="container">
-            <section class="main-about">
+            <section class="main-about" id="main-about">
                 <img src="assets/images/loja.jpg" alt="fachada da loja">
                 <div class="content">
                     <h2 class="title">Sobre a loja</h2>
@@ -30,15 +36,15 @@
                     <p class="paragraph">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati possimus omnis, sunt velit reprehenderit sequi asperiores magnam quia sed ex odit, quisquam ipsum molestiae. Laborum natus adipisci facere aliquam!
                     </p>
-                    <div class="console-group">
-                        <img src="assets/images/nintendo.png" alt="logo nintendo">
-                        <img src="assets/images/xbox.png" alt="logo xbox">
-                        <img src="assets/images/playstation.png" alt="logo playstation">
-                    </div>
+                    <ul class="brands-list">
+                        <li><img src="assets/images/nintendo.png" alt="logo nintendo"></li>
+                        <li><img src="assets/images/xbox.png" alt="logo xbox"></li>
+                        <li><img src="assets/images/playstation.png" alt="logo playstation"></li>
+                    </ul>
                 </div>
             </section>
 
-            <section class="main-contact">
+            <section class="main-contact" id="main-contact">
                 <h2 class="title">Contato</h2>
                 <div class="content">
                     <div class="form">
@@ -55,16 +61,16 @@
                     <div class="follow">
                         <h3 class="subtitle">Nos acompanhe</h3>
                         <ul class="social-medias">
-                            <li><a href="#" target="_blank" title="Ir para o instagram"><img src="assets/images/instagram.png" alt="instagram"></a></li>
-                            <li><a href="#" target="_blank" title="Ir para o facebook"><img src="assets/images/facebook.png" alt="facebook"></a></li>
-                            <li><a href="#" target="_blank" title="Ir para o youtube"><img src="assets/images/youtube.png" alt="youtube"></a></li>
+                            <li><a href="#" target="_blank" title="Ir para o instagram"><img src="assets/images/instagram.png" alt="logo instagram"></a></li>
+                            <li><a href="#" target="_blank" title="Ir para o facebook"><img src="assets/images/facebook.png" alt="logo facebook"></a></li>
+                            <li><a href="#" target="_blank" title="Ir para o youtube"><img src="assets/images/youtube.png" alt="logo youtube"></a></li>
                         </ul>
                     </div>
                             
-                    <div class="adress">
+                    <div class="address">
                         <h3 class="subtitle">Venha até nós</h3>
                         <address>
-                            <a href="#" target="_blank" title="Abrir localização no mapa" class="paragraph">Rua JavaScript n° 124, Vila HTML - São Paulo - SP</a>
+                            <a href="#" target="_blank" title="Abrir localização no mapa">Rua JavaScript n° 124, Vila HTML - São Paulo - SP</a>
                         </address>
                     </div>
                 </div>
